@@ -1,36 +1,27 @@
-# 🌴 TropicalFit — Tropical Workout Tracker
+# TropicalFit
 
-A vibrant, dopamine-driven workout tracking PWA built for iPhone "Add to Home Screen."
+A workout tracker that installs on an iPhone home screen and works offline.
 
-## Features
+**Use it:** https://calvinslinde.github.io/workoutlog/
 
-- 🏋️ **Workout Tracking** — Log exercises, sets, weight, reps, RPE, notes, custom fields
-- ⏱️ **Smart Timers** — Rest timers with Wake Lock + Programmatic Silent Audio for background support
-- 🔥 **Streaks & XP** — Gamified leveling system to keep you motivated
-- 🏆 **PR Detection** — Automatic personal record tracking with celebrations
-- 📊 **Stats Dashboard** — Weekly charts, muscle heatmap, volume trends
-- 🤖 **AI Coach** — Gemini 2.5 Flash powered evidence-based fitness advice
-- 📎 **File Upload** — Upload old workout logs, AI parses them into your history
-- 💬 **AI Chat** — Tap any stat to chat with AI about your progress
-- 📦 **Export/Import** — JSON and CSV export, full data backup
-- 📱 **PWA** — Works offline, installable on iPhone home screen
+## What it does
+
+- Logs exercises, sets, weight, reps, RPE, and notes.
+- Rest timers that keep running in the background.
+- Streaks, personal-record detection, weekly charts, and a muscle heatmap.
+- An optional coach built on Google's Gemini. You paste in your own key. The coach can also read old workout logs you upload and add them to your history.
+- Export to JSON or CSV.
 
 ## Setup
 
-1. Fork/clone this repo
-2. Enable GitHub Pages (Settings → Pages → Source: main branch)
-3. Visit `https://yourusername.github.io/workoutlog/`
-4. On iPhone: Safari → Share → Add to Home Screen
-5. Go to Settings → AI Setup → paste your free API key from [aistudio.google.com](https://aistudio.google.com)
+1. Fork or clone this repository and turn on GitHub Pages for the main branch.
+2. Open the page on your iPhone in Safari, then Share and Add to Home Screen.
+3. For the coach, open Settings, then AI Setup, and paste a key from aistudio.google.com.
 
-## Tech Stack
+## How it's built
 
-- Vanilla HTML/CSS/JS (no frameworks)
-- IndexedDB for local storage
-- Gemini 2.5 Flash API for AI features
-- Screen Wake Lock API + Programmatic Silent Audio for background timers
-- Service Worker for offline support
+Plain HTML, CSS, and JavaScript with no framework. IndexedDB for storage, a service worker for offline use, and the Screen Wake Lock API with silent audio to keep timers running in the background.
 
-## Data Privacy
+## Your data
 
-All workout data is stored locally on your device. AI features require sending workout data to Google's Gemini API — only when you explicitly request analysis or chat.
+Everything stays on your device. The coach sends your workout data to Google's Gemini only when you ask it a question or request an analysis.
